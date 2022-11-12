@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        Your task is to sum the differences between consecutive pairs in the array in descending order.
+        [2, 1, 10] => 9
+
+        In descending order: [10, 2, 1]
+
+        Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
+
+        If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell, None in Rust).
+        */
+
+        function sumOfDifferences(arr) {
+    return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
+
+
+
+/*
+    Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+Examples
+Input: [1, 5.2, 4, 0, -1]
+Output: 9.2
+
+Input: []
+Output: 0
+
+Input: [-2.398]
+Output: -2.398
+
+Assumptions
+You can assume that you are only given numbers.
+You cannot assume the size of the array.
+You can assume that you do get an array and if the array is empty, return 0.
+
+*/
+
+
+// Sum Numbers
+function sum (numbers) {
+    "use strict";
+    return numbers.length>0 ? numbers.reduce((acc,c)=> acc+c) : 0
+    
+};
+
+
+/*
+I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+
+P.S. Each array includes only integer numbers. Output is a number too.
+
+*/
+
+function arrayPlusArray(arr1, arr2) {
+  return [...arr1,...arr2].reduce((arr,c)=> arr+c)
+}
+    </script>
+</body>
+</html>
