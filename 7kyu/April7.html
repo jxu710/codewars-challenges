@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Write a program that outputs the top n elements from a list.
+
+Example:
+
+largest(2, [7,6,5,4,3,2,1])
+// => [6,7]
+*/
+
+      function largest(n, array) {
+        return array
+          .sort((a, b) => b - a)
+          .slice(0, n)
+          .reverse();
+      }
+    </script>
+  </body>
+</html>
