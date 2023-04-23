@@ -17,6 +17,23 @@ For example, running this function on the array ['i', 'have','no','space'] would
         let string = "";
         return array.map((e) => (string += e));
       }
+
+      /*Your task is to write function factorial.
+
+https://en.wikipedia.org/wiki/Factorial
+
+*/
+
+      function factorial(n) {
+        let answer = 1;
+
+        while (n > 0) {
+          answer *= n;
+          n--;
+        }
+
+        return answer;
+      }
     </script>
   </body>
 </html>
